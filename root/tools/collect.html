@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="dots_lines.js"></script>
+        <script src="collect.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="button-group">
+
+                <button id="scale_inc">+</button>
+                <button id="scale_dec">-</button>
+
+                <button id="shift_l"> left</button>
+                <button id="shift_r">right</button>
+
+                <button id="shift_u">up</button>
+                <button id="shift_d">down</button>
+
+                Key:<input type="text" id="key" style="width:100px" />
+                X:<input type="text" id="ruler_x" style="width:50px" />
+                Y:<input type="text" id="ruler_y" style="width:50px" />
+                <span id="coords"></span>
+                <span id="selected_key" style="color:darkred"></span>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-9">
+                    <canvas id="canvas1" width="800" height="600" style="border:solid thin"></canvas>
+                </div>
+                <div class="col-md-3">
+                    <textarea id="result" rows="30" cols="22"></textarea>
+                    <br/>
+                    <button id="save">Save</button>
+                    <button id="draw_lines">Lines</button>
+                </div>
+            </div>
+
+        </div>
+</body>
+</html>
